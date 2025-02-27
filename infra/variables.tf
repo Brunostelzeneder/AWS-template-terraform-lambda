@@ -40,12 +40,6 @@ variable "tags" {
     default = {}
 }
 
-variable "subnet_ids" {
-    type = list(string)
-    description = "A list of subnet IDs in which the Lambda function will run"
-    default = []
-}
-
 variable "security_group_ids" {
     type = list(string)
     description = "A list of security group IDs associated with the Lambda function"
